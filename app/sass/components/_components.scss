@@ -1,0 +1,150 @@
+.info-el{
+	display: flex;
+	align-items: center;
+	&__icon{
+		width: 48px;
+		height: 48px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #BB382A;
+		font-size: 0;
+		margin-right: 24px;
+	}
+}
+
+.block-locate{
+	align-items: flex-start;
+	&__title{
+		font-family: 'Gilroy';
+		font-size: 12px;
+		letter-spacing: 0.04em;
+		color: #677B82;
+		margin-bottom: 14px;
+	}
+	&__val{
+		display: flex;
+		align-items: center;
+		font-family: 'Gilroy';
+		font-weight: 600;
+		font-size: 16px;
+		letter-spacing: 0.04em;
+		color: #2F444E;
+		cursor: pointer;
+		svg{
+			margin-left: 10px;
+		}
+	}
+}
+
+.tel-el{
+	font-family: 'Gilroy';
+	font-size: 16px;
+	letter-spacing: 0.04em;
+	color: #677B82;
+	display: inline-flex;
+	align-items: center;
+	span{
+		font-weight: bold;
+		font-size: 24px;
+		letter-spacing: 0.02em;
+		color: #2F444E;
+		margin-left: 7px;
+	}
+}
+
+.title{
+	font-family: 'Gilroy';
+	font-weight: bold;
+	letter-spacing: 0.02em;
+	color: #2F444E;
+	line-height: 1.25;
+	&_main{
+		font-size: 32px;
+	}
+	&_sec{
+		font-size: 28px;
+	}
+}
+
+.text-sec{
+	font-family: 'Gilroy';
+	font-size: 24px;
+	letter-spacing: 0.02em;
+	color: #2F444E;
+	line-height: 1.3;
+}
+
+.text-info{
+	font-family: 'Gilroy';
+	font-size: 16px;
+	color: #2F444E;
+	line-height: 1.49;
+}
+
+.text-black{
+	font-weight: 600;
+}
+
+.block-sides{
+	display: flex;
+	justify-content: space-between;
+	&__el{
+		width: 46.2%;
+	}
+}
+
+.ul{
+	font-family: 'Gilroy';
+	font-size: 16px;
+	letter-spacing: 0.04em;
+	color: #2F444E;
+	li{
+		padding-left: 40px;
+		position: relative;
+		margin-bottom: 16px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		&::after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 5px;
+			background: #C4C4C4;
+			width: 16px;
+			height: 2px;
+		}
+	}
+}
+
+.main-menu{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #2F444E;
+	&__el{
+		// width: 100%;
+	}
+	&__link{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Gilroy';
+		font-weight: 600;
+		font-size: 16px;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		white-space: nowrap;
+		padding: 28px 40px;
+		transition: .3s;
+		svg{
+			margin-left: 9px;
+		}
+		&:hover{
+			background: #BB382A;
+		}
+	}
+}

@@ -1,0 +1,164 @@
+html{
+	position: relative;
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 0.04em;
+}
+
+a{
+	font-family: 'Gilroy', Arial, sans-serif;
+	letter-spacing: 0.04em;
+}
+
+.wrapper{
+	max-width: 100vw;
+	// overflow-x: hidden;
+}
+
+.container{
+	padding: 0 15px;
+	max-width: 1470px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+}
+
+.top-info{
+	&__wrap{
+		padding: 40px 0;
+	}
+	&__content{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__left{
+		display: block;
+	}
+	&__right{
+		display: flex;
+		align-items: center;
+	}
+	&__logo{
+		display: block;
+		width: 464px;
+		height: 72px;
+		object-fit: contain;
+	}
+	&__right{
+		width: 100%;
+		max-width: 830px;
+	}
+	&__nums{
+		display: flex;
+		align-items: center;
+	}
+	&__num{
+		margin-right: 25px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__locate{
+		margin-right: 160px;
+	}
+}
+
+.top-menu{
+	position: relative;
+	z-index: 10;
+	margin-bottom: -36px;
+}
+
+
+.crumbs-block{
+	background: #F7F7F7;
+	position: relative;
+	z-index: 1;
+	&__wrap{
+		padding: 25px 41px;
+		padding-top: 63px;
+	}
+	&__content{
+		display: flex;
+		align-items: center;
+	}
+	&__left{
+		margin-right: 43px;
+	}
+	&__el{
+		font-family: 'Gilroy';
+		font-size: 12px;
+		color: #2F444E;
+	}
+}
+
+.paddingSides{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.sec-header{
+	&__wrap{
+		padding: 57px 0;
+	}
+	&__top{
+		&-left{
+			padding-right: 40px;
+		}
+	}
+	&__title{
+		margin-bottom: 23px;
+	}
+	&__content{
+		margin-top: 58px;
+		padding: 82px 0;
+		padding-bottom: 90px;
+		overflow: hidden;
+		position: relative;
+		&-img{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			object-fit: cover;
+			width: 72.5%;
+			z-index: 2;
+		}
+	}
+	&__infoDec{
+		position: absolute;
+		top: 123px;
+		right: 0;
+		background: #F7F7F7;
+		max-width: 668px;
+		width: 100%;
+		height: 468px;
+		z-index: 1;
+	}
+	&__info{
+		padding: 36px 39px;
+		padding-bottom: 50px;
+		background: #FFFFFF;
+		max-width: 668px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: 40px;
+		position: relative;
+		z-index: 10;
+		&-title{
+			margin-bottom: 16px;
+		}
+		&-descrp{
+			margin-top: 36px;
+		}
+	}
+}
