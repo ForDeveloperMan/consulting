@@ -33,7 +33,19 @@ function getScrollBarWidth(){
 };
 // $('head').append('<style>.noscroll{margin-right: '+getScrollBarWidth()+'px;}</style>');
 
+$('.top-info__btn, .top-menu__btn').on('click', function() {
+  if ( $('.top-menu').hasClass('active') ) {
+    $('.top-menu').removeClass('active');
+    unsetNoscroll()
+  }else{
+    $('.top-menu').addClass('active');
+    setNoscroll()
+  }
+  return false;
+});
 
+});
 
-
+$(window).on('load', function() {
+  $('.sec-header__infoDec').css('height', $('.sec-header__info').outerHeight());
 });

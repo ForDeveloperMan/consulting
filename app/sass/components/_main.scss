@@ -70,12 +70,21 @@ a{
 	&__locate{
 		margin-right: 160px;
 	}
+	&__btn{
+		display: none;
+	}
 }
 
 .top-menu{
 	position: relative;
 	z-index: 10;
 	margin-bottom: -36px;
+	&__btn{
+		display: none;
+	}
+	&__btnOrder{
+		display: none;
+	}
 }
 
 
