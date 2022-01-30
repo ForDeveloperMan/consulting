@@ -66,6 +66,9 @@
 	&_sec{
 		font-size: 28px;
 	}
+	&_small{
+		font-size: 20px;
+	}
 }
 
 .text-sec{
@@ -81,6 +84,10 @@
 	font-size: 16px;
 	color: #2F444E;
 	line-height: 1.49;
+}
+
+.text-red{
+	color: #BB382A !important;
 }
 
 .text-black{
@@ -125,6 +132,8 @@
 	align-items: center;
 	justify-content: space-between;
 	background: #2F444E;
+	position: relative;
+	z-index: 100;
 	&__el{
 		// width: 100%;
 	}
@@ -144,8 +153,58 @@
 		svg{
 			margin-left: 9px;
 		}
-		&:hover{
+		&:hover, &.active{
 			background: #BB382A;
+		}
+	}
+	&__dropdown{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		display: none;
+	}
+}
+
+.menu-dropdown{
+	background: #FFFFFF;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);
+	&__content{
+		display: flex;
+	}
+	&__col{
+		width: 100%;
+		border-right: 1px solid #C4C4C4;
+		padding: 40px 40px;
+		padding-bottom: 50px;
+		&:last-child{
+			border-right: 0;
+		}
+	}
+	&__title{
+		font-family: 'Gilroy';
+		font-weight: bold;
+		font-size: 20px;
+		letter-spacing: 0.02em;
+		color: #2F444E;
+		line-height: 1.2;
+		min-height: 50px;
+		margin-bottom: 15px;
+	}
+	&__links{
+		li{
+			margin-bottom: 13px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		a{
+			font-family: 'Gilroy';
+			font-size: 16px;
+			letter-spacing: 0.04em;
+			color: #2F444E;
+			line-height: 1.45;
 		}
 	}
 }
@@ -183,5 +242,48 @@
 	text-transform: uppercase;
 	color: #FFFFFF;
 	background: #BB382A;
-	padding: 28px 10px;
+	padding: 28px 91px;
+}
+
+.wrap-article{
+	p{
+		margin-bottom: 17px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.block-order-form{
+	background: url('../img/order.png') no-repeat right;
+	background-color: #F7F7F7;
+	padding: 71px 122px;
+	display: flex;
+	align-items: center;
+	&__body{
+		max-width: 450px;
+		width: 100%;
+		margin-right: 159px;
+	}
+	&__title{
+		margin-bottom: 10px;
+	}
+	&__text{
+		color: #677B82;
+		font-weight: 600;
+	}
+}
+
+.mail-el{
+	display: flex;
+	align-items: center;
+	font-family: 'Gilroy';
+	font-size: 16px;
+	letter-spacing: 0.04em;
+	color: #C4C4C4;
+	a{
+		color: #FF3F2B;
+		display: inline-flex;
+		margin-left: 8px;
+	}
 }
