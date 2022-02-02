@@ -100,6 +100,9 @@
 	.sec-contact__content{
 		height: 700px;
 	}
+	.gallery-big-el__left, .gallery-big-el__right{
+		max-width: 250px;
+	}
 }
 
 @media screen and (max-width: 1250px){
@@ -157,6 +160,13 @@
 	}
 	.clients-el__text{
 		font-size: 18px;
+	}
+
+	.gallery-big-el__right{
+		text-align: right;
+	}
+	.gallery-big-el{
+		padding: 85px 100px;
 	}
 }
 
@@ -287,6 +297,55 @@
 			margin-bottom: 30px;
 		}
 	}
+
+	.sec-about__content{
+		display: block;
+		&-left{
+			max-width: 100%;
+			margin: 0;
+			margin-bottom: 40px;
+		}
+		&-right{
+			max-width: 100%;
+		}
+	}
+
+	.gallery-big-el{
+		flex-wrap: wrap;
+		text-align: center;
+		padding: 20px 100px;
+		padding-bottom: 60px;
+		&__center{
+			order: 1;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 400px;
+			margin-bottom: 40px;
+		}
+		&__img{
+			position: relative;
+			top: auto;
+			left: auto;
+			right: auto;
+			background-attachment: fixed;
+			transform: none;
+		}
+		&__left{
+			order: 2;
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+		&__right{
+			order: 3;
+			max-width: 100%;
+			text-align: center;
+		}
+	}
+	.gallery-big-slider__arr{
+		transform: none;
+		top: auto;
+		bottom: 60px;
+	}
 }
 
 @media screen and (max-width: 800px){
@@ -309,6 +368,13 @@
 	.links-posts__arr{
 		margin-left: 10px;
 		margin-right: 10px;
+	}
+
+	.sec-letters__content .block-gallery{
+		padding-left: 0;
+	}
+	.block-gallery__next{
+		left: 0;
 	}
 }
 
@@ -626,5 +692,55 @@
 	.sec-contact__info{
 		padding: 30px 26px;
 		padding-bottom: 0;
+	}
+
+	.sec-about__title{
+		margin-bottom: 20px;
+	}
+	.sec-about__content-title{
+		margin-bottom: 20px;
+	}
+	.link-dec-2{
+		font-size: 14px;
+	}
+	.sec-about__content-block:last-child{
+		margin-bottom: 0;
+	}
+	.gallery-el__img{
+		width: 100%;
+	}
+
+	.gallery-big-el{
+		padding: 16px;
+		padding-bottom: 116px;
+	}
+	.gallery-big-slider__arr{
+		bottom: 25px;
+	}
+	.gallery-big-el__center{
+		margin-bottom: 24px;
+	}
+	.gallery-big-el__text{
+		margin-bottom: 16px;
+	}
+	.gallery-big-el__left{
+		margin-bottom: 16px;
+	}
+
+	.modal-def__wrap{
+		padding: 72px 16px;
+		.container{
+			padding: 0;
+		}
+	}
+	.modal-def__close{
+		top: 16px;
+		right: 16px;
+	}
+	.gallery-big-slider__prev{
+		left: 24px;
+	}
+	.gallery-big-slider__next{
+		right: 24px;
 	}
 }

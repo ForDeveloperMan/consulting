@@ -72,7 +72,47 @@ if ( $(window).width() > 1000 ) {
   });
 }
 
+const swiper = new Swiper('.block-gallery', {
+  slidesPerView: 4,
+  spaceBetween: 40,
+  navigation: {
+    prevEl: '.block-gallery__prev',
+    nextEl: '.block-gallery__next',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    601: {
+      slidesPerView: 2,
+    },
+    801: {
+      slidesPerView: 4,
+    },
+  },
+});
+const swiper2 = new Swiper('.gallery-big-slider', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  effect: "fade",
+  navigation: {
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+  },
+});
 
+$('.modal-def__overlay, .modal-def__close').on('click', function(){
+  $(this).closest('.modal-def').fadeOut(300);
+  unsetNoscroll();
+  return false;
+});
+
+$('.block-letters__el').on('click', function(){
+  swiper2.slideTo($(this).index());
+  $('#modal-gallery').fadeIn(300);
+  setNoscroll();
+  return false;
+});
 
 });
 
