@@ -425,3 +425,85 @@ a{
 .fixPaddingTop{
 	padding-top: 98px;
 }
+
+.sec-service{
+	&__title{
+		margin-bottom: 41px;
+	}
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		padding-right: 0 !important;
+		&-left{
+			max-width: 790px;
+			width: 100%;
+			margin-right: 40px;
+		}
+		&-right{
+			max-width: 464px;
+			width: 100%;
+		}
+		&-title{
+			margin-bottom: 24px;
+		}
+		&-bottom{
+			margin-top: 67px;
+			padding-right: 0 !important;
+		}
+	}
+	&__article{
+		// margin-top: 24px;
+		p{
+			margin-bottom: 29px;
+		}
+	}
+	&__table{
+		margin-bottom: 61px;
+		&-title{
+			margin-bottom: 17px;
+		}
+	}
+	&__deadline{
+		margin-top: 38px;
+	}
+	&__block{
+		&-title{
+			margin-bottom: 24px;
+		}
+	}
+	.info-company{
+		margin-top: 81px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.sec-service-2{
+	.sec-service__wrap{
+		padding-bottom: 60px;
+	}
+	.sec-service__article p{
+		margin-bottom: 33px;
+	}
+	.sec-service__content-right{
+		margin-top: 9px;
+	}
+	&__title{
+		margin-bottom: 42px;
+	}
+}
+
+.sec-reviews{
+	&__content{
+		margin-top: 107px;
+	}
+	&__bottom{
+		margin-top: 113px;
+	}
+}
+
+.sec-work{
+	&__content{
+		margin-top: 43px;
+	}
+}

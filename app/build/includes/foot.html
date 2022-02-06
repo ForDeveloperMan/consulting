@@ -6,7 +6,7 @@
 					<h2 class="title title_main block-order-form__title">Оставить заявку на услуги</h2>
 					<p class="text-info block-order-form__text">Или задать вопрос специалисту</p>
 				</div>
-				<a href="#" class="block-order-form__btn btn-def"><span>оставить заявку</span></a>
+				<a href="#" class="block-order-form__btn btn-def btn-modal" data-modal="#modal-order"><span>оставить заявку</span></a>
 			</div>
 		</div>
 	</div>
@@ -44,10 +44,49 @@
 
 </div>
 
+<div class="modal-def" id="modal-order">
+	<div class="modal-def__wrap">
+		<div class="modal-def__close close-btn"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="white"/></svg></div>
+		<div class="modal-def__content modal-content">
+			<div class="title title_main modal-content__title">Оставить заявку на услуги</div>
+			<form class="modal-content__form form-block">
+				<div class="form-block__el form-el active">
+					<div class="form-el__placeholder placehodler-def">Ваше имя*</div>
+					<input type="text" class="form-el__inp inp" value="Калинин Михаил" required>
+				</div>
+				<div class="form-block__el form-el">
+					<div class="form-el__placeholder placehodler-def">Организация</div>
+					<input type="text" class="form-el__inp inp">
+				</div>
+				<div class="form-block__inps">
+					<div class="form-block__inps-el form-el active">
+						<div class="form-el__placeholder placehodler-def">Телефон*</div>
+						<input type="text" class="form-el__inp inp" value="+7 (912) 100-06-54" required>
+					</div>
+					<div class="form-block__inps-el form-el active">
+						<div class="form-el__placeholder placehodler-def">E-mail*</div>
+						<input type="text" class="form-el__inp inp" value="test@email.com" required>
+					</div>
+				</div>
+				<div class="form-el-2">
+					<div class="form-el-2__placeholder placehodler-def">Цель оцени или вопрос*</div>
+					<textarea class="form-el-2__el textarea" required>Для многих, при выборе надежного партнера, важна рекомендация других компаний. По результатам сотрудничества, нашии клиенты оставляют отзывы о нашей работе с которыми Вы можете ознакомится. Ниже представленна только часть рекомендаций.</textarea>
+				</div>
+				<div class="form-block__bottom">
+					<div class="form-block__text">Нажимая кнопку «ОТПРАВИТЬ», я подтверждаю, что даю согласие ООО «Консалтинг Групп» и его уполномоченным представителям на обработку предоставленных мной данных</div>
+					<button class="form-block__btn btn-def"><span>Отправить заявку</span></button>
+				</div>
+			</form>
+		</div>
+		<div class="modal-def__overlay overlay"></div>
+	</div>
+</div>
+
+
 <script src="../js/jquery-3.6.0.min.js"></script>
 <script src="../js/swiper-bundle.min.js"></script>
 <script src="../js/main.js"></script>
 
-<!-- <script src="../PixelPerfect/pixelScreen.js"></script> -->
+<script src="../PixelPerfect/pixelScreen.js"></script>
 </body>
 </html>

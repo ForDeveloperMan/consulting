@@ -57,3 +57,13 @@
 .modal-slider{
 	background: #F7F7F7;
 }
+
+.modal-content{
+	max-width: 708px;
+	background: #F7F7F7;
+	padding: 31px 41px;
+	padding-bottom: 39px;
+	&__title{
+		margin-bottom: 56px;
+	}
+}
